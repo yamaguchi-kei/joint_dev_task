@@ -86,6 +86,9 @@ def q9
   names = ["田中", "佐藤", "佐々木", "高橋"]
 
   # 以下に回答を記載
+  names.each.with_index do |name, i|
+    puts "会員No.#{i} #{name}さん"
+  end
 
 end
 
@@ -94,7 +97,14 @@ def q10
 
   # 以下に回答を記載
 
+  if foods.include? ("うに")
+  puts "好物です"
+  else
+  puts "まぁまぁ好きです"
+  end
+
 end
+
 
 def q11
   sports = ["サッカー", "バスケ", "野球", ["フットサル", "野球"], "水泳", "ハンドボール", ["卓球", "サッカー", "ボルダリング"]]
