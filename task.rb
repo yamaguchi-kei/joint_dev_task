@@ -137,7 +137,7 @@ def q13
   update_data = { age: 32, address: "沖縄" }
 
   # 以下に回答を記載
-  #次の user_data に，update_data の内容を反映させ，user_data の内容を書き換え，出力して下さい。
+
   p user_data.update(update_data)
 
 end
@@ -147,6 +147,8 @@ def q14
 
   # 以下に回答を記載
 
+  p data.keys
+
 end
 
 def q15
@@ -154,6 +156,18 @@ def q15
   data2 = { name: "yamada", hobby: "baseball", role: "normal" }
 
   # 以下に回答を記載
+  # age というキーが含まれている場合は OK ，含まれていない場合は NG という文字列が出力されるコードを書いて下さい。
+  if data1.key?(:age)
+    puts "OK"
+  else
+    puts "NG"
+  end
+
+  if data2.key?(:age)
+    puts "OK"
+  else
+    puts "NG"
+  end
 
 end
 
