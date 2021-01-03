@@ -128,6 +128,7 @@ def q12
   data = { user: { name: "satou", age: 33 } }
 
   # 以下に回答を記載
+  p data[:user][:name]
 
 end
 
@@ -136,6 +137,8 @@ def q13
   update_data = { age: 32, address: "沖縄" }
 
   # 以下に回答を記載
+  #次の user_data に，update_data の内容を反映させ，user_data の内容を書き換え，出力して下さい。
+  p user_data.update(update_data)
 
 end
 
