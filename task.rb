@@ -156,18 +156,21 @@ def q15
   data2 = { name: "yamada", hobby: "baseball", role: "normal" }
 
   # 以下に回答を記載
-  # age というキーが含まれている場合は OK ，含まれていない場合は NG という文字列が出力されるコードを書いて下さい。
-  if data1.key?(:age)
-    puts "OK"
-  else
-    puts "NG"
-  end
 
-  if data2.key?(:age)
-    puts "OK"
-  else
-    puts "NG"
-  end
+  #if data1.key?(:age)
+   # puts "OK"
+  #else
+   # puts "NG"
+  #end
+
+  #if data2.key?(:age)
+   # puts "OK"
+  #else
+   # puts "NG"
+  #end
+
+  p data1.key?(:age)? "OK" : "NG"
+  p data2.key?(:age)? "OK" : "NG"
 
 end
 
