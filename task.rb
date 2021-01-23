@@ -34,8 +34,6 @@ def q4
 
   #nilを取り除くメソッド
   sports.compact!
-  p sports
-
 
   # 以下は変更しないで下さい
   p sports
@@ -191,7 +189,20 @@ end
 
 class UserQ17
   # 以下に回答を記載
+  attr_accessor :name,:age,:gender
+  def initialize(**params)
+    @name = params[:name]
+    @age = params[:age]
+    @gender = params[:gender]
+  end
 
+  def info
+    puts <<~TEXT
+    名前：#{@name}
+    年齢：#{@age}
+    性別：#{@gender}
+    TEXT
+  end
 end
 
 def q17
