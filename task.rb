@@ -221,7 +221,7 @@ class UserQ18
     @age = params[:age]
   end
   def introduce
-    if @age == 32
+    if @age > 20
       "こんにちは,#{@name}と申します。よろしくお願い致します"
     else
       "はいさいまいど〜,#{@name}です！！！"
