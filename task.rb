@@ -240,11 +240,14 @@ end
 
 class Item
   # 以下を修正して下さい
-
-  def initialize(name)
-    @name = name
+  attr_accessor :name
+  def initialize(**params)
+    @name = params[:name]
   end
 end
+
+book = Item.new(name: "ゼロ秒思考")
+puts book.name
 
 def q19
   # ここは変更しないで下さい
